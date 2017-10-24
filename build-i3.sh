@@ -1,6 +1,5 @@
-# i3
-sudo apt -y install i3 xinit 
-echo "exec i3" > ~/.xinitrc
+# display manager
+sudo apt install -y --no-install-recommends lightdm lightdm-gtk-greeter
 
 # basic dirs
 mkdir -p ~/Downloads
@@ -8,7 +7,7 @@ mkdir -p ~/Pictures
 mkdir -p ~/projects
 
 # wallpaper
-cp wallpaper.jpg ~/Pictures
+sudo cp wallpaper.jpg /etc/lightdm/
 
 # i3-gaps
 mkdir -p ~/projects 
@@ -110,6 +109,3 @@ sudo make install
 
 cd
 ln -s ~/projects/dotfiles/gtk/.gtkrc-2.0
-
-echo
-echo 'start X server with "startx"'
