@@ -1,6 +1,3 @@
-# display manager
-sudo apt install -y --no-install-recommends lightdm lightdm-gtk-greeter
-
 # basic dirs
 mkdir -p ~/Downloads
 mkdir -p ~/Pictures
