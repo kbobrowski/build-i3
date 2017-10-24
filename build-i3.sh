@@ -9,6 +9,7 @@ mkdir -p ~/projects
 # wallpaper
 sudo cp wallpaper.jpg /etc/lightdm/
 
+
 # i3-gaps
 mkdir -p ~/projects 
 sudo add-apt-repository ppa:aguignard/ppa -y
@@ -53,6 +54,9 @@ sudo dpkg -i slack-desktop-2.8.2-amd64.deb
 # dotfiles
 cd ~/projects
 git clone https://github.com/kbobrowski/dotfiles.git
+
+# lightdm greeter config
+sudo cp ~/projects/dotfiles/lightdm/lightdm-gtk-greeter.conf /etc/lightdm/
 
 # vim config
 cd
