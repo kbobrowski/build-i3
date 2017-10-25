@@ -1,3 +1,5 @@
+sudo apt -y install i3
+
 # basic dirs
 mkdir -p ~/Downloads
 mkdir -p ~/Pictures
@@ -86,6 +88,8 @@ cd /usr/share/weather-util
 sudo gunzip stations
 sudo sed -i 's/weather.noaa.gov\/pub/tgftp.nws.noaa.gov/g' stations
 sudo gzip stations
+
+
 
 
 # urxvt config
